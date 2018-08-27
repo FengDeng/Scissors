@@ -22,7 +22,10 @@ class Scissors {
     fileprivate var previewTime = kCMTimeZero
     
     //主时间轴
-    var mainAssets = [AVAsset]()
+    var mainResources = [Resource]()
+    
+    var _composition = AVMutableComposition.init()
+    
     
     //效果
     var processs = [Processable]()
@@ -40,6 +43,7 @@ extension Scissors{
     func play(){}
     func pause(){}
     func preview(at time:CMTime){
+        let p = AVPlayer.init()
         
     }
 }
@@ -48,16 +52,24 @@ extension Scissors{
 //所有的改变 最终只是修改avcomposition
 extension Scissors{
     func rebuildComposition(){
-        //取出主轴的音视频
-        let composition = AVMutableComposition.init()
-        let videoTrack = composition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid)
-        let audioTrack = composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid)
-        for asset in self.mainAssets{
+        
+        self._composition = AVMutableComposition.init()
+        //一个视频轨道
+        let videoTrack = _composition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid)
+        //一个音频轨道
+        let audioTrack = _composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid)
+        //把主轴里面的音视频轨道全部加入
+        var posTime = kCMTimeZero
+        for resources in self.mainResources{
+            let asset = resources.asset
             if let audioAssetTrack = asset.tracks(withMediaType: .audio).first{
-                audioTrack?.scaleTimeRange(<#T##timeRange: CMTimeRange##CMTimeRange#>, toDuration: <#T##CMTime#>)
+                 try? audioTrack?.insertTimeRange(CMTimeRange.init(start: kCMTimeZero, duration: asset.duration), of: audioAssetTrack, at: posTime)
             }
+            if let videoAssetTrack = asset.tracks(withMediaType: .video).first{
+                try? videoTrack?.insertTimeRange(CMTimeRange.init(start: kCMTimeZero, duration: asset.duration), of: videoAssetTrack, at: posTime)
+            }
+            posTime = posTime + asset.duration
         }
-        AVVideoCompositionCoreAnimationTool
     }
     func rebuildVideoComposition(){
         //设置滤镜效果

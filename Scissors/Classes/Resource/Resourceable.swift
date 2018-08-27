@@ -9,13 +9,33 @@
 import Foundation
 import AVKit
 import Photos
-enum Resource {
-    case asset(AVAsset)
-    case image(PHAsset)
+
+protocol ResourceDelegate : class {
+    
 }
 
-protocol Resourceable : class {
-    func provide()->AVAsset
+class Resource {
+    
+    //资源的原始长度
+    let originDuration : CMTime
+    //资源的裁剪range
+    var clipRange : CMTimeRange
+    //资源的缩放 默认不进行缩放
+    var scale : Int = 1
+    //资源的长度
+//    var duration : CMTime{
+//
+//    }
+    
+    var asset : AVAsset
+    init(filePath:String) {
+        
+        self.asset = AVAsset.init(url: URL.init(fileURLWithPath: filePath))
+        self.originDuration = asset.duration
+        self.clipRange = CMTimeRange.init(start: kCMTimeZero, duration: asset.duration)
+    }
+    
+    
 }
 
 
