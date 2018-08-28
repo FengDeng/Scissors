@@ -9,7 +9,8 @@
 import Foundation
 import CoreImage
 import AVKit
-class FilterProcess {
+/*
+class FilterProcess : Processable {
     var filter : CIFilter
     init(filter:CIFilter) {
         self.filter = filter
@@ -18,9 +19,9 @@ class FilterProcess {
     }
 }
 
-extension FilterProcess : Processable{
+extension FilterProcess{
     func process(image: CIImage?) -> CIImage? {
         self.filter.setValue(image, forKey: kCIInputImageKey)
         return self.filter.outputImage
     }
-}
+}*/

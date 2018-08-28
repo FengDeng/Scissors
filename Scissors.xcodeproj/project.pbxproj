@@ -14,15 +14,13 @@
 		9F127554212D0B4700A9DB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F127552212D0B4700A9DB27 /* LaunchScreen.storyboard */; };
 		9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12755E212D0C3600A9DB27 /* Scissors.swift */; };
 		9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127560212D0D4F00A9DB27 /* Resourceable.swift */; };
-		9F127563212D0EBE00A9DB27 /* Timeaxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127562212D0EBE00A9DB27 /* Timeaxis.swift */; };
 		9F127565212D108B00A9DB27 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127564212D108B00A9DB27 /* Action.swift */; };
-		9F127567212D11EC00A9DB27 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127566212D11EC00A9DB27 /* ImageResource.swift */; };
 		9F12756A212E480F00A9DB27 /* FilterProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127569212E480F00A9DB27 /* FilterProcess.swift */; };
-		9F12756E212E4EEC00A9DB27 /* AudioResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12756D212E4EEC00A9DB27 /* AudioResource.swift */; };
-		9F127570212E5D1D00A9DB27 /* VideoResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12756F212E5D1D00A9DB27 /* VideoResource.swift */; };
-		9F702E35212E88210086B735 /* Resourceable+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E34212E88210086B735 /* Resourceable+Property.swift */; };
 		9F702E38212EA3F60086B735 /* Processable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E37212EA3F60086B735 /* Processable.swift */; };
 		9F702E3B212FAB2C0086B735 /* Rangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E3A212FAB2C0086B735 /* Rangable.swift */; };
+		9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECB2134E02C00F0A6D7 /* Notification.swift */; };
+		9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECF2134F59200F0A6D7 /* Configuration.swift */; };
+		9FA76ED22135267C00F0A6D7 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ED12135267C00F0A6D7 /* Resource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,15 +33,13 @@
 		9F127555212D0B4700A9DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F12755E212D0C3600A9DB27 /* Scissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scissors.swift; sourceTree = "<group>"; };
 		9F127560212D0D4F00A9DB27 /* Resourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourceable.swift; sourceTree = "<group>"; };
-		9F127562212D0EBE00A9DB27 /* Timeaxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeaxis.swift; sourceTree = "<group>"; };
 		9F127564212D108B00A9DB27 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		9F127566212D11EC00A9DB27 /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		9F127569212E480F00A9DB27 /* FilterProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProcess.swift; sourceTree = "<group>"; };
-		9F12756D212E4EEC00A9DB27 /* AudioResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioResource.swift; sourceTree = "<group>"; };
-		9F12756F212E5D1D00A9DB27 /* VideoResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResource.swift; sourceTree = "<group>"; };
-		9F702E34212E88210086B735 /* Resourceable+Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resourceable+Property.swift"; sourceTree = "<group>"; };
 		9F702E37212EA3F60086B735 /* Processable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processable.swift; sourceTree = "<group>"; };
 		9F702E3A212FAB2C0086B735 /* Rangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rangable.swift; sourceTree = "<group>"; };
+		9FA76ECB2134E02C00F0A6D7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		9FA76ECF2134F59200F0A6D7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		9FA76ED12135267C00F0A6D7 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +86,9 @@
 		9F12755B212D0B5400A9DB27 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9FA76ECE2134F36A00F0A6D7 /* Store */,
+				9FA76ECD2134EE9800F0A6D7 /* VideoTrans */,
+				9FA76ECA2134DFF400F0A6D7 /* Notification */,
 				9F12755D212D0B7700A9DB27 /* Core */,
 				9F12755C212D0B6000A9DB27 /* Resource */,
 				9F702E36212EA3D40086B735 /* Process */,
@@ -101,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				9F127560212D0D4F00A9DB27 /* Resourceable.swift */,
-				9F702E34212E88210086B735 /* Resourceable+Property.swift */,
-				9F127568212D11F100A9DB27 /* imp */,
+				9FA76ECF2134F59200F0A6D7 /* Configuration.swift */,
+				9FA76ED12135267C00F0A6D7 /* Resource.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -111,21 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				9F12755E212D0C3600A9DB27 /* Scissors.swift */,
-				9F127562212D0EBE00A9DB27 /* Timeaxis.swift */,
 				9F127564212D108B00A9DB27 /* Action.swift */,
 				9F702E3A212FAB2C0086B735 /* Rangable.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		9F127568212D11F100A9DB27 /* imp */ = {
-			isa = PBXGroup;
-			children = (
-				9F12756D212E4EEC00A9DB27 /* AudioResource.swift */,
-				9F12756F212E5D1D00A9DB27 /* VideoResource.swift */,
-				9F127566212D11EC00A9DB27 /* ImageResource.swift */,
-			);
-			path = imp;
 			sourceTree = "<group>";
 		};
 		9F702E36212EA3D40086B735 /* Process */ = {
@@ -143,6 +131,28 @@
 				9F127569212E480F00A9DB27 /* FilterProcess.swift */,
 			);
 			path = imp;
+			sourceTree = "<group>";
+		};
+		9FA76ECA2134DFF400F0A6D7 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9FA76ECB2134E02C00F0A6D7 /* Notification.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		9FA76ECD2134EE9800F0A6D7 /* VideoTrans */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoTrans;
+			sourceTree = "<group>";
+		};
+		9FA76ECE2134F36A00F0A6D7 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,18 +227,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F702E3B212FAB2C0086B735 /* Rangable.swift in Sources */,
-				9F127567212D11EC00A9DB27 /* ImageResource.swift in Sources */,
 				9F12754C212D0B4600A9DB27 /* ViewController.swift in Sources */,
 				9F127565212D108B00A9DB27 /* Action.swift in Sources */,
-				9F12756E212E4EEC00A9DB27 /* AudioResource.swift in Sources */,
+				9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */,
 				9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */,
 				9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */,
-				9F127570212E5D1D00A9DB27 /* VideoResource.swift in Sources */,
 				9F702E38212EA3F60086B735 /* Processable.swift in Sources */,
 				9F12756A212E480F00A9DB27 /* FilterProcess.swift in Sources */,
-				9F702E35212E88210086B735 /* Resourceable+Property.swift in Sources */,
+				9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */,
+				9FA76ED22135267C00F0A6D7 /* Resource.swift in Sources */,
 				9F12754A212D0B4600A9DB27 /* AppDelegate.swift in Sources */,
-				9F127563212D0EBE00A9DB27 /* Timeaxis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

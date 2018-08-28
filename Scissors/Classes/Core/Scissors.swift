@@ -8,52 +8,23 @@
 
 import Foundation
 import AVKit
-class Scissors {
-    
-    //定时器 渲染
-    fileprivate lazy var displayLink : CADisplayLink = {
-        let link = CADisplayLink.init(target: self, selector: #selector(handleDisplayLink))
-        link.isPaused = true
-        link.add(to: .main, forMode: .commonModes)
-        return link
-    }()
-    
-    //当前预览的时间
-    fileprivate var previewTime = kCMTimeZero
+class Scissors : Codable {
     
     //主时间轴
     var mainResources = [Resource]()
-    
-    var _composition = AVMutableComposition.init()
-    
-    
-    //效果
-    var processs = [Processable]()
-    
-}
-
-extension Scissors{
-    @objc func handleDisplayLink(){
-        
-    }
-}
-
-
-extension Scissors{
-    func play(){}
-    func pause(){}
-    func preview(at time:CMTime){
-        let p = AVPlayer.init()
-        
-    }
+    //资源浮层
+    //var mixResources = [Resource]()
+    //效果浮层
+    //var processs = [Processable]()
 }
 
 
 //所有的改变 最终只是修改avcomposition
 extension Scissors{
-    func rebuildComposition(){
+    
+    func rebuildComposition()->AVComposition{
         
-        self._composition = AVMutableComposition.init()
+        let _composition = AVMutableComposition.init()
         //一个视频轨道
         let videoTrack = _composition.addMutableTrack(withMediaType: .video, preferredTrackID: kCMPersistentTrackID_Invalid)
         //一个音频轨道
@@ -70,13 +41,12 @@ extension Scissors{
             }
             posTime = posTime + asset.duration
         }
+        return _composition.copy() as! AVComposition
     }
-    func rebuildVideoComposition(){
+    /*
+    func rebuildVideoComposition()->AVVideoComposition{
         //设置滤镜效果
-        let composition = AVComposition.init()
         let videoCompostion = AVVideoComposition.init(asset: composition) { (request) in
-            let sourceImage = request.sourceImage
-            request.compositionTime
         }
         //设置视频过渡效果
         //videoCompostion.instructions =
@@ -85,8 +55,9 @@ extension Scissors{
         //视频渲染尺寸
         //videoCompostion.renderSize
         //videoCompostion.renderScale
+        return videoCompostion
     }
     func rebuildAudioMix(){
         
-    }
+    }*/
 }

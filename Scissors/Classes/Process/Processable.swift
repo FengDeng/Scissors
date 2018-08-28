@@ -9,12 +9,8 @@
 import Foundation
 import AVKit
 
-protocol Processable : class {
-    func process(image:CIImage?)->CIImage?
+protocol Processable : Codable{
+    func process(image:CIImage?,at time:CMTime)->CIImage?
 }
 
-
-fileprivate var ProcessableRange = "ProcessableRange"
-extension Processable{
-    
-}
+//typealias Processable = BaseProcessable & Codable
