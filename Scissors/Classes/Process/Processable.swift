@@ -9,8 +9,8 @@
 import Foundation
 import AVKit
 
-protocol Processable : Codable{
+protocol BaseProcessable : Codable{
     func process(image:CIImage?,at time:CMTime)->CIImage?
 }
 
-//typealias Processable = BaseProcessable & Codable
+typealias Processable = BaseProcessable & Codable

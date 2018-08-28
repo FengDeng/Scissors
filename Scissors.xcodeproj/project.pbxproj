@@ -14,13 +14,14 @@
 		9F127554212D0B4700A9DB27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F127552212D0B4700A9DB27 /* LaunchScreen.storyboard */; };
 		9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12755E212D0C3600A9DB27 /* Scissors.swift */; };
 		9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127560212D0D4F00A9DB27 /* Resourceable.swift */; };
-		9F127565212D108B00A9DB27 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127564212D108B00A9DB27 /* Action.swift */; };
 		9F12756A212E480F00A9DB27 /* FilterProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127569212E480F00A9DB27 /* FilterProcess.swift */; };
 		9F702E38212EA3F60086B735 /* Processable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E37212EA3F60086B735 /* Processable.swift */; };
-		9F702E3B212FAB2C0086B735 /* Rangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E3A212FAB2C0086B735 /* Rangable.swift */; };
 		9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECB2134E02C00F0A6D7 /* Notification.swift */; };
 		9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECF2134F59200F0A6D7 /* Configuration.swift */; };
 		9FA76ED22135267C00F0A6D7 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ED12135267C00F0A6D7 /* Resource.swift */; };
+		9FA76ED421353C5F00F0A6D7 /* Scissors+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */; };
+		9FA76ED92135401C00F0A6D7 /* 20180814152717897.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */; };
+		9FA76EDA2135401C00F0A6D7 /* Marvel Studios.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FA76ED82135401C00F0A6D7 /* Marvel Studios.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +34,14 @@
 		9F127555212D0B4700A9DB27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F12755E212D0C3600A9DB27 /* Scissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scissors.swift; sourceTree = "<group>"; };
 		9F127560212D0D4F00A9DB27 /* Resourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourceable.swift; sourceTree = "<group>"; };
-		9F127564212D108B00A9DB27 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		9F127569212E480F00A9DB27 /* FilterProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProcess.swift; sourceTree = "<group>"; };
 		9F702E37212EA3F60086B735 /* Processable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processable.swift; sourceTree = "<group>"; };
-		9F702E3A212FAB2C0086B735 /* Rangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rangable.swift; sourceTree = "<group>"; };
 		9FA76ECB2134E02C00F0A6D7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		9FA76ECF2134F59200F0A6D7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		9FA76ED12135267C00F0A6D7 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scissors+Store.swift"; sourceTree = "<group>"; };
+		9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20180814152717897.mp4; sourceTree = "<group>"; };
+		9FA76ED82135401C00F0A6D7 /* Marvel Studios.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marvel Studios.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 		9F127548212D0B4600A9DB27 /* Scissors */ = {
 			isa = PBXGroup;
 			children = (
+				9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */,
+				9FA76ED82135401C00F0A6D7 /* Marvel Studios.mp4 */,
 				9F12755B212D0B5400A9DB27 /* Classes */,
 				9F127549212D0B4600A9DB27 /* AppDelegate.swift */,
 				9F12754B212D0B4600A9DB27 /* ViewController.swift */,
@@ -110,8 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				9F12755E212D0C3600A9DB27 /* Scissors.swift */,
-				9F127564212D108B00A9DB27 /* Action.swift */,
-				9F702E3A212FAB2C0086B735 /* Rangable.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 		9FA76ECE2134F36A00F0A6D7 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -213,9 +216,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA76EDA2135401C00F0A6D7 /* Marvel Studios.mp4 in Resources */,
 				9F127554212D0B4700A9DB27 /* LaunchScreen.storyboard in Resources */,
 				9F127551212D0B4700A9DB27 /* Assets.xcassets in Resources */,
 				9F12754F212D0B4600A9DB27 /* Main.storyboard in Resources */,
+				9FA76ED92135401C00F0A6D7 /* 20180814152717897.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,9 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F702E3B212FAB2C0086B735 /* Rangable.swift in Sources */,
+				9FA76ED421353C5F00F0A6D7 /* Scissors+Store.swift in Sources */,
 				9F12754C212D0B4600A9DB27 /* ViewController.swift in Sources */,
-				9F127565212D108B00A9DB27 /* Action.swift in Sources */,
 				9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */,
 				9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */,
 				9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */,
@@ -313,7 +317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -383,6 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87X96NB2YG;
 				INFOPLIST_FILE = Scissors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87X96NB2YG;
 				INFOPLIST_FILE = Scissors/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
