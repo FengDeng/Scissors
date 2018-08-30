@@ -15,7 +15,7 @@ class Scissors : Codable {
     //资源浮层
     //var mixResources = [Resource]()
     //效果浮层
-    //var processs = [Processable]()
+    //var processs = [T]()
 }
 
 
@@ -32,7 +32,7 @@ extension Scissors{
         //把主轴里面的音视频轨道全部加入
         var posTime = kCMTimeZero
         for resources in self.mainResources{
-            let asset = resources.asset
+            let asset = resources.asset.asset
             if let audioAssetTrack = asset.tracks(withMediaType: .audio).first{
                  try? audioTrack?.insertTimeRange(CMTimeRange.init(start: kCMTimeZero, duration: asset.duration), of: audioAssetTrack, at: posTime)
             }

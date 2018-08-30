@@ -11,28 +11,24 @@ import AVKit
 
 class Resource: Resourceable {
     
+    var asset : SOURLAsset
     
-    var asset : AVURLAsset
     
-    private init(asset:AVURLAsset) {
+    
+    var isImage = false
+    
+    private init(asset:SOURLAsset) {
         self.asset = asset
     }
     
     convenience init(imagePath:String) {
         let asset = AVURLAsset.init(url: URL.init(fileURLWithPath: ""), options: [AVURLAssetPreferPreciseDurationAndTimingKey:true])
-        self.init(asset: asset)
+        self.init(asset: SOURLAsset.init(asset: asset))
+        self.isImage = true
     }
     convenience init(filePath:String) {
         let asset = AVURLAsset.init(url: URL.init(fileURLWithPath: filePath), options: [AVURLAssetPreferPreciseDurationAndTimingKey:true])
-        self.init(asset: asset)
-    }
-    
-    required init(from decoder: Decoder) throws {
-        //self.asset = decoder.container(keyedBy: .asset)
-        self.asset = AVURLAsset.init(url: URL.init(fileURLWithPath: ""), options: [AVURLAssetPreferPreciseDurationAndTimingKey:true])
-    }
-    func encode(to encoder: Encoder) throws {
-        
+        self.init(asset: SOURLAsset.init(asset: asset))
     }
     
 }

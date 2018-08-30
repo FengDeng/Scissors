@@ -9,7 +9,7 @@
 import Foundation
 import AVKit
 
-protocol BaseProcessable : Codable{
+protocol BaseProcessable{
     func process(image:CIImage?,at time:CMTime)->CIImage?
 }
 

@@ -22,6 +22,9 @@
 		9FA76ED421353C5F00F0A6D7 /* Scissors+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */; };
 		9FA76ED92135401C00F0A6D7 /* 20180814152717897.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */; };
 		9FA76EDA2135401C00F0A6D7 /* Marvel Studios.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FA76ED82135401C00F0A6D7 /* Marvel Studios.mp4 */; };
+		9FA76EE32137D1AD00F0A6D7 /* SOTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76EE22137D1AD00F0A6D7 /* SOTime.swift */; };
+		9FA76EE52137D1BA00F0A6D7 /* SOTimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76EE42137D1BA00F0A6D7 /* SOTimeRange.swift */; };
+		9FA76EE72137D26200F0A6D7 /* SOURLAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76EE62137D26200F0A6D7 /* SOURLAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scissors+Store.swift"; sourceTree = "<group>"; };
 		9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20180814152717897.mp4; sourceTree = "<group>"; };
 		9FA76ED82135401C00F0A6D7 /* Marvel Studios.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Marvel Studios.mp4"; sourceTree = "<group>"; };
+		9FA76EE22137D1AD00F0A6D7 /* SOTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTime.swift; sourceTree = "<group>"; };
+		9FA76EE42137D1BA00F0A6D7 /* SOTimeRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTimeRange.swift; sourceTree = "<group>"; };
+		9FA76EE62137D26200F0A6D7 /* SOURLAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOURLAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				9F12755E212D0C3600A9DB27 /* Scissors.swift */,
+				9FA76EE22137D1AD00F0A6D7 /* SOTime.swift */,
+				9FA76EE42137D1BA00F0A6D7 /* SOTimeRange.swift */,
+				9FA76EE62137D26200F0A6D7 /* SOURLAsset.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -232,8 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA76ED421353C5F00F0A6D7 /* Scissors+Store.swift in Sources */,
+				9FA76EE32137D1AD00F0A6D7 /* SOTime.swift in Sources */,
+				9FA76EE52137D1BA00F0A6D7 /* SOTimeRange.swift in Sources */,
 				9F12754C212D0B4600A9DB27 /* ViewController.swift in Sources */,
 				9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */,
+				9FA76EE72137D26200F0A6D7 /* SOURLAsset.swift in Sources */,
 				9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */,
 				9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */,
 				9F702E38212EA3F60086B735 /* Processable.swift in Sources */,
