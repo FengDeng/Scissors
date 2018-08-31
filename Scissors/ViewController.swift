@@ -20,8 +20,9 @@ class ViewController: UIViewController {
         let scissors = Scissors.init()
         
         scissors.mainResources = [Resource.init(filePath: Bundle.main.path(forResource: "Marvel Studios", ofType: "mp4")!),Resource.init(filePath: Bundle.main.path(forResource: "20180814152717897", ofType: "mp4")!)]
+        scissors.mixResources = [Resource.init(filePath: Bundle.main.path(forResource: "火箭少女101 - 卡路里", ofType: "mp3")!),Resource.init(filePath: Bundle.main.path(forResource: "大张伟 - 我怎么这么好看", ofType: "mp3")!)]
         let compo = scissors.rebuildComposition()
-        let a = AVMutableVideoComposition.init(asset: compo) { (request) in
+        let videoComposition = AVMutableVideoComposition.init(asset: compo) { (request) in
             print("\(request.compositionTime.seconds)")
             let filter = CIFilter.init(name: "CIPhotoEffectTransfer")
             filter?.setValue(request.sourceImage, forKey: kCIInputImageKey)
@@ -29,8 +30,16 @@ class ViewController: UIViewController {
             let image = filter?.outputImage
             request.finish(with: image!, context: nil)
         }
+        
+        let instruction = AVMutableVideoCompositionInstruction.init()
+        
+        
+        
+        
+        
+        
         let item = AVPlayerItem.init(asset: compo)
-        item.videoComposition = a
+        item.videoComposition = videoComposition
         player = AVPlayer.init(playerItem: item)
         let layer = AVPlayerLayer.init(player: player)
         self.view.layer.addSublayer(layer)

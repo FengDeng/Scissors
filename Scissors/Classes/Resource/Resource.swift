@@ -11,24 +11,21 @@ import AVKit
 
 class Resource: Resourceable {
     
-    var asset : SOURLAsset
-    
-    
-    
+    var asset : AVURLAsset
     var isImage = false
     
-    private init(asset:SOURLAsset) {
+    private init(asset:AVURLAsset) {
         self.asset = asset
     }
     
     convenience init(imagePath:String) {
         let asset = AVURLAsset.init(url: URL.init(fileURLWithPath: ""), options: [AVURLAssetPreferPreciseDurationAndTimingKey:true])
-        self.init(asset: SOURLAsset.init(asset: asset))
+        self.init(asset: asset)
         self.isImage = true
     }
     convenience init(filePath:String) {
         let asset = AVURLAsset.init(url: URL.init(fileURLWithPath: filePath), options: [AVURLAssetPreferPreciseDurationAndTimingKey:true])
-        self.init(asset: SOURLAsset.init(asset: asset))
+        self.init(asset: asset)
     }
     
 }
