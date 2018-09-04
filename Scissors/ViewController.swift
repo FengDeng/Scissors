@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
+        /*
         let scissors = Scissors.init()
         
         scissors.mainResources = [Resource.init(filePath: Bundle.main.path(forResource: "Marvel Studios", ofType: "mp4")!),Resource.init(filePath: Bundle.main.path(forResource: "20180814152717897", ofType: "mp4")!)]
@@ -30,16 +31,40 @@ class ViewController: UIViewController {
             let image = filter?.outputImage
             request.finish(with: image!, context: nil)
         }
+        */
         
-        let instruction = AVMutableVideoCompositionInstruction.init()
+        let asset = AVAsset.init(url: URL.init(fileURLWithPath: Bundle.main.path(forResource: "20180814152717897", ofType: "mp4")!))
+        let item = AVPlayerItem.init(asset: asset)
+        /*
+        let videoComposition = AVMutableVideoComposition.init(propertiesOf: asset)
+        let parentLayer = CALayer.init()
+        parentLayer.frame = CGRect.init(x: 0, y: 0, width: videoComposition.renderSize.width, height: videoComposition.renderSize.height)
+        let videoLayer = CALayer.init()
+        videoLayer.frame = CGRect.init(x: 0, y: 0, width: videoComposition.renderSize.width, height: videoComposition.renderSize.height)
+        parentLayer.addSublayer(videoLayer)
         
-        let text = AVAsset.init(url: URL.init(fileURLWithPath: Bundle.main.path(forResource: "20180814152717897", ofType: "ass")!))
+        let customLayer = CALayer.init()
+        customLayer.backgroundColor = UIColor.green.cgColor
+        customLayer.frame = CGRect.init(x: 0, y: 0, width: 800, height: 400)
+        parentLayer.addSublayer(customLayer)
         
-        let item = AVPlayerItem.init(asset: AVAsset.init(url: URL.init(fileURLWithPath: Bundle.main.path(forResource: "20180814152717897", ofType: "mp4")!)))
-        let option = AVMediaSelectionOption.init()
-
-        item.videoComposition = videoComposition
+        let tool = AVVideoCompositionCoreAnimationTool.init(postProcessingAsVideoLayer: videoLayer, in: parentLayer)
+        videoComposition.animationTool = tool
+        */
+        
+        let syncLayer = AVSynchronizedLayer.init(playerItem: item)
+        let customLayer = CALayer.init()
+        customLayer.backgroundColor = UIColor.green.cgColor
+        //customLayer.frame = CGRect.init(x: 0, y: 0, width: 800, height: 400)
+        syncLayer.addSublayer(customLayer)
+        
+        
+        
+        
+        self.view.layer.addSublayer(syncLayer)
+        
         player = AVPlayer.init(playerItem: item)
+        //item.videoComposition = videoComposition
         let layer = AVPlayerLayer.init(player: player)
         self.view.layer.addSublayer(layer)
         layer.frame = self.view.bounds

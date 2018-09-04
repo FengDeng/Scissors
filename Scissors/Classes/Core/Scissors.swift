@@ -56,9 +56,6 @@ extension Scissors{
         }
         
         
-        
-        
-        
         return _composition.copy() as! AVComposition
     }
     /*
