@@ -15,6 +15,7 @@
 		9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F12755E212D0C3600A9DB27 /* Scissors.swift */; };
 		9F127561212D0D4F00A9DB27 /* Resourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127560212D0D4F00A9DB27 /* Resourceable.swift */; };
 		9F12756A212E480F00A9DB27 /* FilterProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F127569212E480F00A9DB27 /* FilterProcess.swift */; };
+		9F1A7A23213D246F00CFC575 /* 20180814152717897.ass in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A7A22213D246F00CFC575 /* 20180814152717897.ass */; };
 		9F702E38212EA3F60086B735 /* Processable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E37212EA3F60086B735 /* Processable.swift */; };
 		9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECB2134E02C00F0A6D7 /* Notification.swift */; };
 		9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECF2134F59200F0A6D7 /* Configuration.swift */; };
@@ -40,6 +41,7 @@
 		9F12755E212D0C3600A9DB27 /* Scissors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scissors.swift; sourceTree = "<group>"; };
 		9F127560212D0D4F00A9DB27 /* Resourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resourceable.swift; sourceTree = "<group>"; };
 		9F127569212E480F00A9DB27 /* FilterProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProcess.swift; sourceTree = "<group>"; };
+		9F1A7A22213D246F00CFC575 /* 20180814152717897.ass */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 20180814152717897.ass; sourceTree = "<group>"; };
 		9F702E37212EA3F60086B735 /* Processable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processable.swift; sourceTree = "<group>"; };
 		9FA76ECB2134E02C00F0A6D7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		9FA76ECF2134F59200F0A6D7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		9F127548212D0B4600A9DB27 /* Scissors */ = {
 			isa = PBXGroup;
 			children = (
+				9F1A7A22213D246F00CFC575 /* 20180814152717897.ass */,
 				9FA76EEA2137F0A900F0A6D7 /* 大张伟 - 我怎么这么好看.mp3 */,
 				9FA76ED72135401C00F0A6D7 /* 20180814152717897.mp4 */,
 				9FA76EE82137EE2700F0A6D7 /* 火箭少女101 - 卡路里.mp3 */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FA76EDA2135401C00F0A6D7 /* Marvel Studios.mp4 in Resources */,
+				9F1A7A23213D246F00CFC575 /* 20180814152717897.ass in Resources */,
 				9F127554212D0B4700A9DB27 /* LaunchScreen.storyboard in Resources */,
 				9FA76EE92137EE2800F0A6D7 /* 火箭少女101 - 卡路里.mp3 in Resources */,
 				9F127551212D0B4700A9DB27 /* Assets.xcassets in Resources */,

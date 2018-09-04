@@ -33,12 +33,11 @@ class ViewController: UIViewController {
         
         let instruction = AVMutableVideoCompositionInstruction.init()
         
+        let text = AVAsset.init(url: URL.init(fileURLWithPath: Bundle.main.path(forResource: "20180814152717897", ofType: "ass")!))
         
-        
-        
-        
-        
-        let item = AVPlayerItem.init(asset: compo)
+        let item = AVPlayerItem.init(asset: AVAsset.init(url: URL.init(fileURLWithPath: Bundle.main.path(forResource: "20180814152717897", ofType: "mp4")!)))
+        let option = AVMediaSelectionOption.init()
+
         item.videoComposition = videoComposition
         player = AVPlayer.init(playerItem: item)
         let layer = AVPlayerLayer.init(player: player)
