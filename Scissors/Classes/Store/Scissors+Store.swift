@@ -7,11 +7,12 @@
 //
 
 import Foundation
-
+import UIKit
 extension Scissors{
     
     //get scissors from file cache
     static func cacheScissors()->[Scissors]{
+        let l = CALayer()
         return[]
     }
     

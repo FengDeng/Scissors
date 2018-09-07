@@ -10,7 +10,9 @@ import Foundation
 import AVKit
 
 protocol BaseProcessable{
-    func process(image:CIImage?,at time:CMTime)->CIImage?
+    func process(sourceImage:CIImage,renderSize:CGSize,at time:CMTime)->CIImage
 }
 
-typealias Processable = BaseProcessable & Codable
+typealias Processable = BaseProcessable
+
+
