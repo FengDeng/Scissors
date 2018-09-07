@@ -15,6 +15,8 @@ typealias Resourceable = Codable & BaseResourceable
 
 protocol BaseResourceable {
     
+    
+    
 }
 
 

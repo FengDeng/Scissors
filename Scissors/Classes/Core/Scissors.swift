@@ -16,6 +16,10 @@ class Scissors : Codable {
     var mixResources = [Resource]()
     //效果浮层
     //var processs = [T]()
+    
+    init(resource:Resource) {
+        
+    }
 }
 
 

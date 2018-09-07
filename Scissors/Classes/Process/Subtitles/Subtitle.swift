@@ -52,15 +52,25 @@ class Subtitle{
 
 extension Subtitle : Processable{
     func process(sourceImage: CIImage, renderSize: CGSize, at time: CMTime) -> CIImage {
-        guard let subtitleImage = self.getSubtitle(at: time) else{
+        //Get subtitle with time
+        guard let subtitleAtt = self.getSubtitle(at: time) else{
             return sourceImage
         }
-        //移动字幕位置的filter
+        //Generate Image with subtitle
+        UIGraphicsBeginImageContextWithOptions(subtitleAtt.size(), false, 3)
+        subtitleAtt.draw(at: CGPoint.zero)
+        let renderImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        guard let image = renderImage,let subtitleImage = CIImage.init(image: image) else {
+            return sourceImage
+        }
+        
+        //Modify SubtitleImage position
         let tansformFilter = CIFilter.init(name: "CIAffineTransform")!
         tansformFilter.setValue(subtitleImage, forKey: kCIInputImageKey)
         tansformFilter.setValue(CGAffineTransform.init(translationX: 10, y: 10), forKey: kCIInputTransformKey)
         
-        //把字幕和视频帧合并的filter
+        //Composite SubtitleImage and VideoFrame
         let compositingFilter = CIFilter(name: "CISourceOverCompositing")!
         compositingFilter.setValue(sourceImage, forKey: kCIInputBackgroundImageKey)
         compositingFilter.setValue(tansformFilter.outputImage, forKey: kCIInputImageKey)
@@ -73,21 +83,12 @@ extension Subtitle : Processable{
 
 extension Subtitle{
     
-    func getSubtitle(at time:CMTime)->CIImage?{
+    func getSubtitle(at time:CMTime)->NSAttributedString?{
         for subtitle in self.subtitles{
             let range = CMTimeRangeMake(CMTime.init(seconds: subtitle.start, preferredTimescale: 600), CMTime.init(seconds: subtitle.duration, preferredTimescale: 600))
             if range.containsTime(time){
-                //添加描边 白字 黑边
                 let str = NSAttributedString.init(string: subtitle.text, attributes: [NSAttributedStringKey.foregroundColor:UIColor.white,NSAttributedStringKey.font:UIFont.boldSystemFont(ofSize: 16),NSAttributedStringKey.strokeColor:UIColor.black,NSAttributedStringKey.strokeWidth:-1])
-                UIGraphicsBeginImageContextWithOptions(str.size(), false, 3)
-                str.draw(at: CGPoint.zero)
-                let image = UIGraphicsGetImageFromCurrentImageContext()
-                UIGraphicsEndImageContext()
-                if let image = image{
-                    return CIImage.init(image: image)
-                }else{
-                    return nil
-                }
+                return str
             }
         }
         return nil

@@ -17,6 +17,8 @@
 		9F1A7A23213D246F00CFC575 /* 20180814152717897.ass in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A7A22213D246F00CFC575 /* 20180814152717897.ass */; };
 		9F1A7A632141343900CFC575 /* Subtitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A7A622141343900CFC575 /* Subtitle.swift */; };
 		9F1A7A662141359F00CFC575 /* WaterMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A7A652141359F00CFC575 /* WaterMark.swift */; };
+		9F1A7A86214215F200CFC575 /* Storeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A7A85214215F200CFC575 /* Storeable.swift */; };
+		9F1A7A8921421B5100CFC575 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A7A8821421B5100CFC575 /* Parameter.swift */; };
 		9F702E38212EA3F60086B735 /* Processable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F702E37212EA3F60086B735 /* Processable.swift */; };
 		9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECB2134E02C00F0A6D7 /* Notification.swift */; };
 		9FA76ED02134F59200F0A6D7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA76ECF2134F59200F0A6D7 /* Configuration.swift */; };
@@ -44,6 +46,8 @@
 		9F1A7A22213D246F00CFC575 /* 20180814152717897.ass */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 20180814152717897.ass; sourceTree = "<group>"; };
 		9F1A7A622141343900CFC575 /* Subtitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subtitle.swift; sourceTree = "<group>"; };
 		9F1A7A652141359F00CFC575 /* WaterMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMark.swift; sourceTree = "<group>"; };
+		9F1A7A85214215F200CFC575 /* Storeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storeable.swift; sourceTree = "<group>"; };
+		9F1A7A8821421B5100CFC575 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		9F702E37212EA3F60086B735 /* Processable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Processable.swift; sourceTree = "<group>"; };
 		9FA76ECB2134E02C00F0A6D7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		9FA76ECF2134F59200F0A6D7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
@@ -154,9 +158,18 @@
 			path = WaterMark;
 			sourceTree = "<group>";
 		};
+		9F1A7A87214219B800CFC575 /* Parameter */ = {
+			isa = PBXGroup;
+			children = (
+				9F1A7A8821421B5100CFC575 /* Parameter.swift */,
+			);
+			path = Parameter;
+			sourceTree = "<group>";
+		};
 		9F702E36212EA3D40086B735 /* Process */ = {
 			isa = PBXGroup;
 			children = (
+				9F1A7A87214219B800CFC575 /* Parameter */,
 				9F1A7A642141357C00CFC575 /* WaterMark */,
 				9F1A7A612141341A00CFC575 /* Subtitles */,
 				9F702E37212EA3F60086B735 /* Processable.swift */,
@@ -183,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				9FA76ED321353C5F00F0A6D7 /* Scissors+Store.swift */,
+				9F1A7A85214215F200CFC575 /* Storeable.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -263,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1A7A86214215F200CFC575 /* Storeable.swift in Sources */,
 				9FA76ED421353C5F00F0A6D7 /* Scissors+Store.swift in Sources */,
 				9FA76EE32137D1AD00F0A6D7 /* CMTime.swift in Sources */,
 				9FA76EE52137D1BA00F0A6D7 /* SOTimeRange.swift in Sources */,
@@ -273,6 +288,7 @@
 				9F12755F212D0C3600A9DB27 /* Scissors.swift in Sources */,
 				9F1A7A662141359F00CFC575 /* WaterMark.swift in Sources */,
 				9F1A7A632141343900CFC575 /* Subtitle.swift in Sources */,
+				9F1A7A8921421B5100CFC575 /* Parameter.swift in Sources */,
 				9F702E38212EA3F60086B735 /* Processable.swift in Sources */,
 				9FA76ECC2134E02C00F0A6D7 /* Notification.swift in Sources */,
 				9FA76ED22135267C00F0A6D7 /* Resource.swift in Sources */,
