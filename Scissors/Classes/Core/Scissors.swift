@@ -12,14 +12,7 @@ class Scissors : Codable {
     
     //主时间轴
     var mainResources = [Resource]()
-    //资源浮层
-    var mixResources = [Resource]()
-    //效果浮层
-    //var processs = [T]()
-    
-    init(resource:Resource) {
-        
-    }
+
 }
 
 
@@ -45,21 +38,6 @@ extension Scissors{
             }
             posTime = posTime + asset.duration
         }
-        
-        //浮层
-        let audioTrack2 = _composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid)
-        let asset2 = self.mixResources[0].asset.asset
-        if let audioAssetTrack = asset2.tracks(withMediaType: .audio).first{
-            try? audioTrack2?.insertTimeRange(CMTimeRange.init(start: kCMTimeZero, duration: asset2.duration), of: audioAssetTrack, at: kCMTimeZero)
-        }
-        
-        let audioTrack3 = _composition.addMutableTrack(withMediaType: .audio, preferredTrackID: kCMPersistentTrackID_Invalid)
-        let asset3 = self.mixResources[1].asset.asset
-        if let audioAssetTrack = asset3.tracks(withMediaType: .audio).first{
-            try? audioTrack3?.insertTimeRange(CMTimeRange.init(start: kCMTimeZero, duration: asset3.duration), of: audioAssetTrack, at: kCMTimeZero)
-        }
-        
-        
         return _composition.copy() as! AVComposition
     }
     /*
